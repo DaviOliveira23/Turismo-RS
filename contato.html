@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home site</title>
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div id="LOGOTIPO">
+			<a href="index.html" id="logo">
+				<img class="lg" src="CSS/Imagens/logo.png" alt="Logomarca" width="80px">
+            </a>
+        </div>
+
+        <nav id="menu-principal" >
+            
+			<ul class="grupo">
+				<li class="menu">
+					<a id="menu-inicial" href="index.html">Home</a>
+				</li>
+				<li class="menu">
+					<a id="menu-inicial" href="eventos.html">Eventos</a>
+				</li>
+				<li class="menu">
+					<a id="menu-inicial" href="locais.html">Locais</a>
+				</li>
+				<li class="menu">
+					<a id="menu-inicial" class="ativo" href="contato.html">Contato</a>
+				</li>
+			</ul>
+		</div>
+
+    </header>
+
+
+
+    <main>
+
+        <h1 class="fale-conosco">Fale Conosco</h1>
+        
+        <form action="/processar_formulario" method="post">
+            <!-- Campo de texto -->
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" required>
+            <br>
+            <label for="nome">Email:</label>
+            <input type="text" name="email" required>
+            <br>
+            <label for="nome">Telefone:</label>
+            <input type="text" name="telefone" required>
+            <br>
+    
+            
+            <!-- Área de texto (textarea) -->
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea>
+            <br>
+    
+            <!-- Menu suspenso (select) -->
+            <label for="avaliacao">Avalie o site:</label>
+            <select  name="avaliacao" required>
+                <option value="">Selecione...</option>
+                <option value="excelente">Excelente</option>
+                <option value="bom">Bom</option>
+                <option value="regular">Regular</option>
+                <option value="ruim">Ruim</option>
+            </select>
+            <br>
+
+            <!-- Caixa de seleção (checkbox) -->
+            <label>O quanto te ajudamos a conhecer Pelotas:</label>
+            <input type="checkbox" id="interesse1" name="interesses[]" value="noticias">
+            <label for="interesse1">Muito</label>
+            <input type="checkbox" id="interesse2" name="interesses[]" value="esportes">
+            <label for="interesse2">Um pouco</label>
+            <input type="checkbox" id="interesse3" name="interesses[]" value="tecnologia">
+            <label for="interesse3">Não me ajudou</label>
+            <br>
+    
+    
+            <!-- Botões de rádio (radio) -->
+            <label>Como você encontrou o site?</label>
+            <input type="radio" id="encontrou1" name="encontrou" value="busca" required>
+            <label for="encontrou1">Busca na internet</label>
+            <input type="radio" id="encontrou2" name="encontrou" value="indicacao">
+            <label for="encontrou2">Indicação de amigos</label>
+            <br>
+    
+            <!-- Botão de envio (submit) -->
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+
+
+
+    <footer>
+        <p id="telefone-email">
+            contato:davimesquitade@gmail.com
+            <br>
+            <span class="ddd">53</span> 974009279
+        </p>
+
+        <p id="endereco">
+            Rua Gonçalves Chaves, 3218
+            <br>
+            CEP 96015-560
+            <br>
+            Pelotas - RS
+        </p>
+
+        <small id="copyright">
+            &copy; TurismRS - Turismo Rio Grande do Sul
+        </small>
+    </footer>
+
+</body>
+</html>

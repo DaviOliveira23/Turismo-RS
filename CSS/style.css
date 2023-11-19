@@ -1,0 +1,422 @@
+/*folha 1 - Home */
+
+/* Definindo Tamanho das partesa principais */
+body header footer{
+    width: 960px;
+    height: auto;
+}
+
+/* Tirando espaçamentos e definindo Fonte */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    }
+
+/* Criando E estilizando Cor e alinhamento do Cabeçalho */   
+header {
+    background-color: #333;
+    height: 15%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Posição da logotipo */
+.lg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1%;
+    left: 2%;
+}
+
+/* Colocando  o Menu principal na horizontal */
+.menu{
+    display: inline;
+}
+
+/* Alinhando e posicionando o menu */
+ul{
+       text-align: center;
+       padding-top: 1.9em;
+       left: -5%;
+}
+
+/* Definições de tamanho de fonte, cor, e espaçamento */
+/* Quatro heranças */
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 50px;
+    color: white;
+    padding: 10px;
+
+}
+
+/* Criando um Hover pro menu */
+
+ #menu-inicial:hover{
+    background-color: #45a049;
+ }
+
+/* Criando uma barra que identifica qual a folha de menu ativa */
+ header a.ativo {
+    border-top: 2px solid #45a049 ;
+  }
+
+/* Criando a barra de informações central do site */
+#dados{
+    display: block;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 60%;
+    height: 15%;
+    border-radius: 100px;
+    background-color: white
+}
+
+/* Posicionando os icones dentro da barra */
+#icones{
+    position: absolute;
+}
+
+.icone1{
+    left: 5%;
+    top: 20%;
+}
+
+.icone2{
+    left: 35%;
+    top: 20%;
+}
+
+.icone3{
+    left: 65%;
+    top: 20%;
+}
+
+/* Posicionando os textos na barra */
+.text1{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.text2{
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.text3{
+    position:absolute;
+    left: 75%;
+    top: 20%;
+}
+
+/* Tirando espaçamento da imagem de background */
+main {
+    padding: 0px;
+}
+/* Definindo altura para colocar os textos e aside */
+nav{
+    height: 50%;
+}
+
+/* Estilizando Titulo dentro da nav */
+.titulo{
+    font-size: 32px;
+    padding: 0;
+    margin-bottom: 1%;
+}
+
+/* Definindo altura, largura, posição, espaçamento e cor de fundo do aside */
+aside{
+    width: 30%;
+    height: 30%;
+    position: relative; 
+    top: -80px; 
+    left: 45%; 
+    background-color: #f0f0f0; 
+    padding: 10px; /
+}
+
+/* Criando um  espaçamento pequeno no texto */
+#Apresentação a{
+    position: relative;
+    left: 1%;
+}
+
+/* Editando altura,  posicionamento do section */
+#conteudo-secundario{
+  margin: 0;
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+}
+
+/* Criando Bordas nas imagens, alinhando-as horizontalmente e criando uma transição */
+#borda{  
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border: 1px solid black; 
+    overflow: hidden; 
+    transition: width 1s, height 1s; 
+}
+
+/* Criando um hover, para aumentar a  imagem ao passar o cursor */
+#borda:hover{
+    width: 120%;
+    
+}
+
+/* Definindo posição das imagens dentro de cada borda  */
+.img1{
+   transform: translate(-5%);
+}
+
+.img2{
+    transform: translate(-18%);
+}
+
+.img3{
+    transform: translate(-25%);
+}
+
+.img4{
+    transform: translate(-20%);
+}
+
+/* Criando rodapé, cor, posição, alinhamento */
+footer {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/*folha 2 - Eventos */
+
+
+/* Criando tabela de eventos, margens, altura e posição */
+table {
+    min-width: 600px;
+    max-width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    height: 50%;
+    margin-top: auto;
+  }
+
+/* Criando Bordas para a tabela */
+  table, th, td {
+    border: 1px solid black;
+  }
+
+/* Estilizando o th impares de cada coluno da tabela */
+  .head1, .head2{
+    background-color: #333;
+    color: white;
+  }
+/* criando espaçamento interno e alinhamento do texto */
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+
+/* Definindo cores para as demais tr */
+  tr:first-child {
+    background-color: #f2f2f2;
+  }
+
+  tr:last-child {
+    background-color: #f2f2f2;
+  }
+
+/* tirando borda inferior */
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+/* Posicionando imagem do main */
+.event{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Folha 3 - Locais */
+
+/* Definindo largura e espaçamento interno das barras */
+ol {
+    width: 50%;
+    padding: 15px; 
+    list-style-type: none; 
+}
+
+/* Criando Borda e espaçamento inferior */
+.lista {
+    border: 2px solid #333;
+    margin-bottom: 50px;
+    padding: 15px; 
+}
+
+/* Definindo cores e posição */
+#l1{
+    background-color: #333;
+    color: white;
+    position: relative;
+    left: 0;
+}
+
+#l2{
+    position: relative;
+    left: 45px;
+}
+
+#l3{
+    background-color: #333;
+    color: white;
+    position: relative;
+    left: 90px;
+}
+
+#l4{
+    position: relative;
+    left: 135px;
+}
+
+#l5{
+    background-color: #333;
+    color: white;
+    position: relative;
+    left: 180px;
+}
+
+/* Posicionando um mapa na parte inferior da page */
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50.25%;
+    position:relative;
+    height:0;
+    background-color: #2A2D33;
+    
+}
+
+/* Posicionamento e arredondamento de bordas */
+.map-responsive iframe{
+    border-radius: 42px;
+    left: 260;
+    top: 5%;
+    height:60%;
+    width:60%;
+    position:absolute;
+}
+
+/* Tirando aparência de link dos textos e cor da fonte */
+.a1{
+    text-decoration: none;
+    color: white;
+}
+
+.a2{
+    text-decoration: none;
+    color: black;
+}
+
+.a3{
+    text-decoration: none;
+    color: white;
+}
+
+.a4{
+    text-decoration: none;
+    color: black;
+}
+
+.a5{
+    text-decoration: none;
+    color: white;
+}
+
+/* folha 4 - Contato */
+
+
+/* Cor e alinhamento do texto */
+.fale-conosco {
+    text-align: center;
+    color: #333;
+}
+
+/* Definições da tabela */
+form {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaçamento e cor do texto */
+label {
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* tamanho, espaçamento e espaçamento */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Alinhando o texto com a input  */
+#encontrou1, #encontrou2{
+    position: absolute;
+    left: -10%;
+    
+}
+
+#interesse1, #interesse2, #interesse3{
+    position: absolute;
+    left: -10%;
+}
+
+/* Textarea somente expandir na vertical */
+textarea {
+    resize: vertical;
+}
+/* Estilizando Cursor */
+select {
+    cursor: pointer;
+}
+
+/*Estilizando botão de envio */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Hover no botão de enviar */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
